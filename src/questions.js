@@ -1,7 +1,7 @@
 export const questionJson = JSON.stringify([
   {
     image: 'http://placekitten.com/g/300/300',
-    text: 'Which is not an element in the periodic table?',
+    text: 'Which are elements in the periodic table?',
     answers: [
       {
         id: 1,

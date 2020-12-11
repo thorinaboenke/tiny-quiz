@@ -21,11 +21,12 @@ function Question(props: Props) {
         return false;
       }
     }
+
     return true;
   }
   return (
     <div className="flex-container">
-      <div>
+      <div className="question">
         <div>{props.question.text}</div>
         <form>
           {answers.map((answer) => {
@@ -57,13 +58,15 @@ function Question(props: Props) {
           </button>
         </form>
       </div>
-      {isAnswered && (
-        <div className="section">{isCorrect ? 'Correct' : 'Wrong'}</div>
+      {isAnswered && isCorrect && (
+        <div className="section feedback correct">Correct</div>
+      )}
+      {isAnswered && !isCorrect && (
+        <div className="section feedback wrong">Wrong</div>
       )}
       <div className="section correct-answers">
-        {isAnswered && !isCorrect && <div>correct answers:</div>}
+        {isAnswered && <div>correct answers:</div>}
         {isAnswered &&
-          !isCorrect &&
           answers.map((a) => {
             return a.correct ? <div key={a.text}>{a.text}</div> : null;
           })}

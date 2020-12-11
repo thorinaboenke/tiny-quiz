@@ -23,11 +23,26 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.question {
+  min-width: 350px;
+}
 .section {
   margin-left: 2em;
   margin-right: 2em;
 }
+
+.feedback,
+.correct-answers {
+  align-self: center;
+}
 button {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.correct {
+  color: green;
+}
+.wrong {
+  color: red;
 }
