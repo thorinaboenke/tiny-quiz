@@ -6,3 +6,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.main {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.section {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

@@ -7,11 +7,15 @@ import { QuizQuestion } from './util/types';
 function App() {
   const questions: QuizQuestion[] = JSON.parse(questionJson);
   return (
-    <div>
-      <div>Select all correct answers and click submit</div>
-      {questions.map((question) => {
-        return <Question key={question.text} question={question} />;
-      })}
+    <div className="main">
+      <div>
+        <div className="heading">
+          Select all correct answers and click submit
+        </div>
+        {questions.map((question) => {
+          return <Question key={question.text} question={question} />;
+        })}
+      </div>
     </div>
   );
 }
