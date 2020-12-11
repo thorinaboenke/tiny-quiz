@@ -26,37 +26,40 @@ function Question(props: Props) {
   }
   return (
     <div className="flex-container">
-      <div className="question">
-        <div>{props.question.text}</div>
-        <form>
-          {answers.map((answer) => {
-            return (
-              <div key={answer.text}>
-                <input
-                  type="checkbox"
-                  checked={answer.checked}
-                  id={answer.text}
-                  name={answer.text}
-                  value={answer.text}
-                  onChange={(event) => {
-                    const checked = event.target.checked;
-                    setAnswers(
-                      answers.map((a) => {
-                        return a.id !== answer.id
-                          ? { ...a }
-                          : { ...a, checked: checked };
-                      }),
-                    );
-                  }}
-                />
-                <label htmlFor={answer.text}>{answer.text}</label>
-              </div>
-            );
-          })}
-          <button onClick={() => submitAnswer()} disabled={isAnswered}>
-            Submit Answer
-          </button>
-        </form>
+      <div className="inner-flex-container">
+        <img src={props.question.image} alt="example" />
+        <div className="question">
+          <div>{props.question.text}</div>
+          <form>
+            {answers.map((answer) => {
+              return (
+                <div key={answer.text}>
+                  <input
+                    type="checkbox"
+                    checked={answer.checked}
+                    id={answer.text}
+                    name={answer.text}
+                    value={answer.text}
+                    onChange={(event) => {
+                      const checked = event.target.checked;
+                      setAnswers(
+                        answers.map((a) => {
+                          return a.id !== answer.id
+                            ? { ...a }
+                            : { ...a, checked: checked };
+                        }),
+                      );
+                    }}
+                  />
+                  <label htmlFor={answer.text}>{answer.text}</label>
+                </div>
+              );
+            })}
+            <button onClick={() => submitAnswer()} disabled={isAnswered}>
+              Submit Answer
+            </button>
+          </form>
+        </div>
       </div>
       {isAnswered && isCorrect && (
         <div className="section feedback correct">Correct</div>

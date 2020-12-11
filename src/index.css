@@ -6,7 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+img {
+  height: 140px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
 .main {
   display: flex;
   width: 1000px;
@@ -22,6 +26,9 @@ body {
 .flex-container {
   display: flex;
   justify-content: space-between;
+}
+.inner-flex-container {
+  display: flex;
 }
 .question {
   min-width: 350px;
