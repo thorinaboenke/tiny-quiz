@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { QuizQuestion, Answer } from './util/types';
 
 type Props = {
@@ -8,6 +9,9 @@ function Question(props: Props) {
   const [answers, setAnswers] = useState(props.question.answers);
   const [isAnswered, setIsAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+
+  const markdown = `
+   ${props.question.text}`;
 
   const submitAnswer = () => {
     setIsAnswered(true);
@@ -29,7 +33,9 @@ function Question(props: Props) {
       <div className="inner-flex-container">
         <img src={props.question.image} alt="example" />
         <div className="question">
-          <div>{props.question.text}</div>
+          <div>
+            <ReactMarkdown source={markdown} />
+          </div>
           <form>
             {answers.map((answer) => {
               return (
