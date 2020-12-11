@@ -13,6 +13,10 @@ The user has to select all correct answers from the set of possible answers.
 After selecting the answers, the user should receive feedback as to whether the selection was
 correct or incorrect. If it was incorrect, he or she should additionally be shown the correct solution.
 
+Screenshot
+
+<img src="https://github.com/thorinaboenke/tiny-quiz/blob/master/public/Screenshot%20.png" width="400" alt='quiz screenshot'>
+
 ## Technologies used
 
 - Create React App
@@ -38,7 +42,8 @@ yarn start
 ```
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `yarn test`
+```bash
+yarn test
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
