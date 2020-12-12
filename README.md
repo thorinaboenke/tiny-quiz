@@ -15,7 +15,6 @@ The user has to select all correct answers from the set of possible answers.
 After selecting the answers, the user should receive feedback as to whether the selection was
 correct or incorrect. If it was incorrect, he or she should additionally be shown the correct solution.
 
-Screenshot
 
 <img src="https://github.com/thorinaboenke/tiny-quiz/blob/master/public/Screenshot%20.png" width="600" alt='quiz screenshot'>
 
