@@ -26,6 +26,8 @@ Screenshot
 
 ## Libraries used
 - react-markdown
+- jest
+- cypress
 
 ## Run this project locally
 
@@ -47,4 +49,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ```bash
 yarn test
 ```
-Launches the test runner in the interactive watch mode.
+Launches the Jest Test Runner in the interactive watch mode.
+
+```bash
+yarn run cypress open
+```
+Launches the Cypress Test Runner
