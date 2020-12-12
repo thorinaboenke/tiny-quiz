@@ -41,6 +41,7 @@ function Question(props: Props) {
               return (
                 <div key={answer.text}>
                   <input
+                    data-cy="checkbox"
                     type="checkbox"
                     checked={answer.checked}
                     id={answer.text}
@@ -61,7 +62,11 @@ function Question(props: Props) {
                 </div>
               );
             })}
-            <button onClick={() => submitAnswer()} disabled={isAnswered}>
+            <button
+              onClick={() => submitAnswer()}
+              disabled={isAnswered}
+              data-cy="submit-button"
+            >
               Submit Answer
             </button>
           </form>
