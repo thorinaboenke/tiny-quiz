@@ -31,27 +31,30 @@ Screenshot
 
 ## Run this project locally
 
-Clone the repository
+Clone the repository:
 ```bash
 git clone https://github.com/thorinaboenke/tiny-quiz
 ```
-in the created directory, to install the dependencies
+in the created directory, to install the dependencies:
 ```bash
 yarn
 ```
-In the created directory, to run the app in development mode
+In the created directory, to run the app in development mode:
 
 ```bash
 yarn start
 ```
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+Launch the Jest Test Runner in the interactive watch mode:
+
 ```bash
 yarn test
 ```
-Launches the Jest Test Runner in the interactive watch mode.
+
+Launche the Cypress Test Runner:
 
 ```bash
 yarn run cypress open
 ```
-Launches the Cypress Test Runner
+
