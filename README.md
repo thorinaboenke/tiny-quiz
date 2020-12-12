@@ -52,7 +52,7 @@ Launch the Jest Test Runner in the interactive watch mode:
 yarn test
 ```
 
-Launche the Cypress Test Runner:
+Launch the Cypress Test Runner:
 
 ```bash
 yarn run cypress open
